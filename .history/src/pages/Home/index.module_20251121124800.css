@@ -1,0 +1,21 @@
+@import "../../index.css";
+
+.homeContainer {}
+
+
+
+
+
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .homeContainer {
+        max-width: 1200px;
+        min-height: 100svh;
+        margin: 0 auto;
+        padding: 32px;
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 24px;
+    }
+}

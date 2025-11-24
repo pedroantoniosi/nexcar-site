@@ -1,0 +1,12 @@
+@import "../../index.css";
+
+.CardAbout {
+    & .CardAboutIco {
+        padding: 2rem;
+        margin: 0 auto;
+        width: fit-content;
+        display: flex;
+        background-color: red;
+        border-radius: 50%;
+    }
+}

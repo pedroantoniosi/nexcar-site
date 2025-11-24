@@ -1,0 +1,17 @@
+@import "../../index.css";
+
+.homeContainer {}
+
+
+
+
+
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .homeContainer {
+        max-width: 1200px;
+        min-height: 100svh;
+        background-color: red;
+    }
+}

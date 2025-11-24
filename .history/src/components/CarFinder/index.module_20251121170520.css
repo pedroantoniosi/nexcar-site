@@ -1,0 +1,17 @@
+@import "../../index.css";
+
+.CarFinder {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: red;
+
+    & .btnSelector {
+        width: 100%;
+        padding: 1rem;
+        font-weight: 500;
+        background-color: #fff;
+        color: #000;
+    }
+}

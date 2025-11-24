@@ -1,0 +1,77 @@
+@import "../../index.css";
+
+.homeContainer {
+    & .homeContent {
+        display: grid;
+        place-items: center;
+
+        & .homeCaption {
+            & .homeTitle {
+                display: flex;
+                flex-direction: column;
+                font-size: clamp(1rem, 5vw, 3.5vw);
+            }
+        }
+    }
+}
+
+
+.contactContainer {
+
+    min-height: 80svh;
+    background-image: url('../../assets/img/contact-banner.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    & .contactCaption {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+
+        & img {
+            width: 100px;
+        }
+
+        & .contactTitle {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .homeContainer {
+        display: grid;
+        min-height: 100svh;
+        background-image: url('../../assets/img/banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .contactContainer {
+        min-height: 80svh;
+        background-image: url('../../assets/img/contact-banner.png');
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        & .contactCaption {
+            display: grid;
+            place-items: center;
+            gap: 2rem;
+
+            & img {
+                width: 100px;
+            }
+
+            & .contactTitle {
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+    }
+}

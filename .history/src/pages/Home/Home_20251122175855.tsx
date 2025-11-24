@@ -1,0 +1,72 @@
+import styles from "./index.module.css";
+import Container from "../../components/Container/Index";
+import CarFinder from "../../components/CarFinder/Index";
+import Template from "../../components/Template/Index";
+
+const Home = () => {
+  return (
+    <>
+      <section className={styles.homeContainer}>
+        <Container className={styles.homeContent}>
+          <div className={styles.homeCaption}>
+            <h2 className={styles.homeTitle}>
+              <span
+                style={{
+                  color: `red`,
+                  transform: `translateX(-200px)`,
+                }}
+              >
+                ONE MISSION
+              </span>
+              <span>ONE PASSION</span>
+            </h2>
+            <p className={styles.homeText}></p>
+          </div>
+        </Container>
+      </section>
+      <CarFinder></CarFinder>
+      <Container>
+        <Template columns={4} gap="4rem">
+          <div className="card">
+            <h2>Olá Mundo</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+              minus porro eos corporis, tenetur, vero qui ut nobis explicabo
+              reprehenderit perferendis at quasi voluptate asperiores vitae,
+              sint deleniti tempora modi.
+            </p>
+          </div>
+          <div className="card">
+            <h2>Olá Mundo</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+              minus porro eos corporis, tenetur, vero qui ut nobis explicabo
+              reprehenderit perferendis at quasi voluptate asperiores vitae,
+              sint deleniti tempora modi.
+            </p>
+          </div>
+          <div className="card">
+            <h2>Olá Mundo</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+              minus porro eos corporis, tenetur, vero qui ut nobis explicabo
+              reprehenderit perferendis at quasi voluptate asperiores vitae,
+              sint deleniti tempora modi.
+            </p>
+          </div>
+          <div className="card">
+            <h2>Olá Mundo</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+              minus porro eos corporis, tenetur, vero qui ut nobis explicabo
+              reprehenderit perferendis at quasi voluptate asperiores vitae,
+              sint deleniti tempora modi.
+            </p>
+          </div>
+        </Template>
+      </Container>
+    </>
+  );
+};
+
+export default Home;

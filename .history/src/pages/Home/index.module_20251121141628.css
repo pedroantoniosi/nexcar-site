@@ -1,0 +1,22 @@
+@import "../../index.css";
+
+.homeContainer {
+    & .homeContent {
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .homeContainer {
+        min-height: 100svh;
+        background-image: url('../../assets/img/banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
