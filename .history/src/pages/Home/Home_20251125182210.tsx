@@ -16,8 +16,15 @@ const Home = () => {
         <Container className={styles.homeContent}>
           <div className={styles.homeCaption}>
             <h2 className={styles.homeTitle}>
-              <span className={styles.homeTitleSpan}>ONE MISSION</span>
-              <span className={styles.homeTitleSpan}>ONE PASSION</span>
+              <span
+                style={{
+                  color: `var(--primaryColor)`,
+                  transform: `translateX(-100px)`,
+                }}
+              >
+                ONE MISSION
+              </span>
+              <span>ONE PASSION</span>
             </h2>
             <p className={styles.homeText}></p>
           </div>

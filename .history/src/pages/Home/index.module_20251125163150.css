@@ -1,0 +1,125 @@
+@import "../../index.css";
+
+.homeContainer {
+    & .homeContent {
+        display: grid;
+        place-items: center;
+
+        & .homeCaption {
+            & .homeTitle {
+                display: flex;
+                flex-direction: column;
+                font-size: clamp(1rem, 5vw, 3.5vw);
+            }
+        }
+    }
+}
+
+
+.contactContainer {
+
+    min-height: 80svh;
+    background-image: url('../../assets/img/contact-banner-mobile.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    & .contactCaption {
+        padding: 4rem;
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+
+        & img {
+            width: 100px;
+        }
+
+        & .contactTitle {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+.newsContainer {
+    padding: 1rem;
+    background-color: red;
+
+    & .newsContent {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        padding: 1rem;
+        background-color: rgb(0, 255, 149);
+
+        & .newsCard {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            background-color: blue;
+            border-radius: .6rem;
+
+            & .newsImg {
+                width: 100%;
+                aspect-ratio: 9/16;
+                object-fit: cover;
+            }
+        }
+
+        & .asideNews {
+            background-color: red;
+
+            & .newsCard {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+                & .newsImg {
+                    aspect-ratio: 16/9;
+                }
+            }
+        }
+    }
+}
+
+
+
+.button {
+    background-color: var(--primaryColor);
+    color: var(--dark);
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .homeContainer {
+        display: grid;
+        min-height: 100svh;
+        background-image: url('../../assets/img/banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .contactContainer {
+        min-height: 80svh;
+        background-image: url('../../assets/img/contact-banner.png');
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        & .contactCaption {
+            display: grid;
+            place-items: center;
+            gap: 2rem;
+
+            & img {
+                width: 100px;
+            }
+
+            & .contactTitle {
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
+    }
+
+
+}

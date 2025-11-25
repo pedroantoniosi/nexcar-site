@@ -110,7 +110,7 @@
 /* Desktop and up */
 @media (min-width: 1024px) {
     .homeContainer {
-        display: flex;
+        display: grid;
         min-height: 100svh;
         background-image: url('../../assets/img/banner.png');
         background-size: cover;

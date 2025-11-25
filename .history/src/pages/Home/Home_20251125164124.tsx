@@ -16,8 +16,21 @@ const Home = () => {
         <Container className={styles.homeContent}>
           <div className={styles.homeCaption}>
             <h2 className={styles.homeTitle}>
-              <span className={styles.homeTitleSpan}>ONE MISSION</span>
-              <span className={styles.homeTitleSpan}>ONE PASSION</span>
+              <span
+                style={{
+                  color: `var(--primaryColor)`,
+                  transform: `translateX(-100px)`,
+                }}
+              >
+                ONE MISSION
+              </span>
+              <span
+                style={{
+                  transform: `translateX(100px)`,
+                }}
+              >
+                ONE PASSION
+              </span>
             </h2>
             <p className={styles.homeText}></p>
           </div>
@@ -27,7 +40,7 @@ const Home = () => {
 
       <section className={styles.newsContainer}>
         <Container className={styles.newsContent}>
-          <div className={styles.newsCard}>
+          <div className="overflow-hidden d-grid">
             <img className={styles.newsImg} src={firstNews} alt="" />
             <div className={styles.newsCaption}>
               <h2 className={styles.newsTitle}>Lorem ipsum dolor sit</h2>
@@ -38,7 +51,9 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.newsCard}>
-            <img className={styles.newsImg} src={secondNews} alt="" />
+            <div className="overflow-hidden">
+              <img className={styles.newsImg} src={secondNews} alt="" />
+            </div>
             <div className={styles.newsCaption}>
               <h2 className={styles.newsTitle}>Lorem ipsum dolor sit</h2>
               <p className={styles.newsText}>
@@ -48,7 +63,9 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.newsCard}>
-            <img className={styles.newsImg} src={thirdNews} alt="" />
+            <div className="overflow-hidden">
+              <img className={styles.newsImg} src={thirdNews} alt="" />
+            </div>
             <div className={styles.newsCaption}>
               <h2 className={styles.newsTitle}>Lorem ipsum dolor sit</h2>
               <p className={styles.newsText}>
