@@ -36,7 +36,7 @@ const CarFinder = () => {
 
           {/* Quilometragem */}
           <div className={styles.rangeContainer}>
-            <label>Miles: {km.toLocaleString()} km</label>
+            <label>Quilometragem: {km.toLocaleString()} km</label>
             <input
               type="range"
               min={0}

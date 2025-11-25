@@ -42,7 +42,7 @@ const Home = () => {
           <div className={styles.newsCard}>
             <img className={styles.newsImg} src={secondNews} alt="" />
             <div className={styles.newsCaption}>
-              <h2 className={styles.newsTitle}>Freshen up this fall</h2>
+              <h2 className={styles.newsTitle}>Lorem ipsum dolor sit</h2>
               <p className={styles.newsText}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
                 assumenda numquam velit?
@@ -52,7 +52,7 @@ const Home = () => {
           <div className={styles.newsCard}>
             <img className={styles.newsImg} src={thirdNews} alt="" />
             <div className={styles.newsCaption}>
-              <h2 className={styles.newsTitle}>Welcome to the race</h2>
+              <h2 className={styles.newsTitle}>Lorem ipsum dolor sit</h2>
               <p className={styles.newsText}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
                 assumenda numquam velit?
